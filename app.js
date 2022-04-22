@@ -29,8 +29,17 @@ app.post('/v1/explorers', (req, res) => {
     console.log(`POST Explorers V1 API ${new Date()}`)
     //Agregar la lógica para guardar
     console.log(req.body) //parametros del request
-    res.status(201).json( {message: "Creado exitosamente"})
+    res.status(201).json({message: "Creado exitosamente"})
 
+})
+
+//Sirve para actualizar
+app.put('/v1/explorers/:id', (req, res) => {
+    console.log(`PUT Explorers V1 API ${new Date()}`)
+    //Agregar la lógica para ACTUALIZAR
+    console.log(req.body)
+    console.log(req.params.id)
+    res.status(200).json({message: "Actualizado exitosamente"})
 })
 
 // Con esto inicializamos esta app
