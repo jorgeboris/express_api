@@ -42,6 +42,12 @@ app.put('/v1/explorers/:id', (req, res) => {
     res.status(200).json({message: "Actualizado exitosamente"})
 })
 
+app.delete('/v1/explorers/:id', (req, res) => {
+    console.log(`DELETE Explorers V1 API ${new Date()}`)
+    //Agregar la lógica para ELIMINAR el registro enviado
+    res.status(200).json({message: "Eliminado exitosamente"})
+})
+
 // Con esto inicializamos esta app
 app.listen(port, () => {
  console.log(`Example app listening on port ${port}`)
