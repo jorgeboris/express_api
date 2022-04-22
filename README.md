@@ -1,2 +1,6 @@
-# express_api
-Mi primer API
+# Express API 😸
+### Mi primer API creando endpoints:
+- GET
+- POST
+- PUT
+- DELETE
